@@ -28,12 +28,16 @@
     <p>&nbsp;</p>    </td>
     <td class= "fondo" align="center"><form id="form1" name="form1" method="post" action="">
       <p align="center">instructores    </p>
+      <a href="{{url('insertar_instructores')}}"> insertar_instructores </a>
+    </form>    
       <p></p>
     </form>
     <p>&nbsp;</p>    </td>
     <td><form id="form1" name="form1" method="post" action="">
       <p align="center">fichas de formaci&oacute;n    </p>
       <p align="center"><img src="fichas-puzzle-formacion.jpg" width="224" height="131" /></p>
+      <a href="{{url('insertar_fichas')}}"> insertar_fichas </a>
+    </form>    
     </form>
       <form id="form2" name="form2" method="post" action="">
         <label>

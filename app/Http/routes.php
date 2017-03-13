@@ -35,3 +35,17 @@ Route::get('Administrador', function () {
 Route::get('insertar_ambientes', function () {
     return view('insertar_ambientes');
 });
+
+Route::post('insertar_ambientes','insertar_db_controller@insertar_ambiente');
+
+Route::get('insertar_fichas', function () {
+    return view('insertar_fichas');
+});
+
+Route::post('insertar_fichas','insertar_db_fichacontroller@insertar_ficha');
+
+Route::get('insertar_instructores', function () {
+    return view('insertar_instructores');
+});
+
+Route::post('insertar_instructores','insertar_db_instructorcontroller@insertar_instructor');
