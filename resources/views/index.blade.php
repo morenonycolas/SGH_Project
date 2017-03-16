@@ -19,7 +19,7 @@
 <body  class="fondo" >
 <table width="900" border="1" align="center">
   <tr>
-    <td height="48" colspan="3"><img src="fondo_la92.png" width="903" height="160" /></td>
+    <td height="48" colspan="3"><img src={{'fondo_la92.png'}} width="903" height="160" /></td>
   </tr>
   <tr>
     <td height="182"><form id="form1" name="form1" method="post" action="">

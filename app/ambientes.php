@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class ambientes extends Model
 {
 
-    protected $fillable =['descripcion'];
+    protected $table ='ambientes';
+    protected $fillable = ['descripcion'];
+    public $timestamps = false;
 }

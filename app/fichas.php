@@ -6,5 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class fichas extends Model
 {
-   protected $fillable =['numero_ficha','programa','grupo'];
+   
+   protected $table ='fichas';
+    protected $fillable = ['numero_ficha','programa','grupo'];
+    public $timestamps = false;
 }

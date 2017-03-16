@@ -36,16 +36,53 @@ Route::get('insertar_ambientes', function () {
     return view('insertar_ambientes');
 });
 
+/** rutas sobre crud de la informacion de los ambientes**/
+
 Route::post('insertar_ambientes','insertar_db_controller@insertar_ambiente');
+
+Route::get('editar_ambientes/{id}','insertar_db_controller@editar_ambiente');
+
+Route::get('consultar_ambientes','insertar_db_controller@listar_ambiente');
+
+
+route::post('actualizar_ambientes/{id}','insertar_db_controller@actualizar_ambiente');
+
+Route::post('eliminar_ambientes/{id}','insertar_db_controller@eliminar_ambientes');
 
 Route::get('insertar_fichas', function () {
     return view('insertar_fichas');
 });
 
-Route::post('insertar_fichas','insertar_db_fichacontroller@insertar_ficha');
+/** rutas sobre crud de la informacion de las fichas**/
+
+Route::post('insertar_fichas','insertar_db_fichacontroller@insertar_fichas');
+
+Route::post('editar_fichas','insertar_db_controller@editar_fichas');
+
+route::post('actualizar_fichas','insertar_db_controller@actualizar_fichas');
+
+Route::post('eliminar_fichas','insertar_db_controller@eliminar_fichas');
+
 
 Route::get('insertar_instructores', function () {
     return view('insertar_instructores');
 });
 
+/*rutas sobre crud de la informacion de los instrucrtores*/
+
 Route::post('insertar_instructores','insertar_db_instructorcontroller@insertar_instructor');
+
+Route::post('editar_fichas','insertar_db_controller@editar_instructores');
+
+route::post('actualizar_fichas','insertar_db_controller@actualizar_instructores');
+
+Route::post('eliminar_fichas','insertar_db_controller@eliminar_instructores');
+
+Route::get('ins_instructores', function () {
+    return view('insertar_instructores');
+});
+
+
+
+
+
