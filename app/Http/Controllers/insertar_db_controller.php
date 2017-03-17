@@ -17,10 +17,10 @@ class insertar_db_controller extends Controller
      */
     public function insertar_ambiente()
     {
-
-
          $data=Request() ->all ();
         ambientes::create($data);
+        return Redirect () -> to('consultar_ambientes');
+
     }
 
         public function editar_ambiente($id)
@@ -37,10 +37,12 @@ class insertar_db_controller extends Controller
         return Redirect () -> to('consultar_ambientes');
     }
 
-     public function eliminar_ambiente()
+     public function eliminar_ambiente($id)
     {
-         $ambiente=ambientes:: findorfail($id) ->first();
-        $ambiente->delete();
+         $ambiente=ambientes::findorfail($id) ;
+       $data = Request () -> all();
+       $ambiente -> fill ($data) -> delete () ;
+        return Redirect () -> to('consultar_ambientes');
     }
 
      public function listar_ambiente()

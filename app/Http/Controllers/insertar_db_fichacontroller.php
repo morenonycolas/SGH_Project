@@ -24,7 +24,7 @@ class insertar_db_fichacontroller extends Controller
      public function editar_ficha($id)
     {
          $ficha=fichas::findorfail($id) ;
-        return view ('actualizar ficha', compact('ficha'));
+        return view ('actualizar_fichas', compact('ficha'));
     }
 
      public function actualizar_ficha($id)
@@ -32,7 +32,7 @@ class insertar_db_fichacontroller extends Controller
        $ficha=fichas::findorfail($id) ;
        $data = Request () -> all();
        $ficha -> fill ($data) -> save ();
-        return Redirect () -> to('consultar_ficha');
+        return Redirect () -> to('consultar_fichas');
     }
 
      public function eliminar_ficha()
@@ -40,5 +40,12 @@ class insertar_db_fichacontroller extends Controller
          $ficha=fichas:: findorfail($id) ->first();
         $ficha->delete();
     }
+
+      public function listar_ficha()
+    {
+         $ficha=fichas::all();
+        return view ('consultar_fichas', compact('ficha'));
+    }
+
         
 }

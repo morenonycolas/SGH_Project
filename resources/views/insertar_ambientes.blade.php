@@ -19,7 +19,7 @@
     <td><p>&nbsp;</p>
         <p align="center" class="Estilo1">Registro de Horario</p>
         <p align="center" class="Estilo1">------------------------------------------ </p>
-        <form id="form1" name="form1" method="post" action="{{url('insertar_ambientes')}}">
+        <form id="insertar_ambientes" name="insertar_ambientes" method="post" action="{{url('insertar_ambientes')}}">
         {!!csrf_field()!!}
           <table width="527" border="0" align="center">
             <tr>

@@ -32,11 +32,14 @@ Route::get('Administrador', function () {
     return view('Administrador');
 });
 
+
+
+
+
+/** rutas sobre crud de la informacion de los ambientes**/
 Route::get('insertar_ambientes', function () {
     return view('insertar_ambientes');
 });
-
-/** rutas sobre crud de la informacion de los ambientes**/
 
 Route::post('insertar_ambientes','insertar_db_controller@insertar_ambiente');
 
@@ -44,31 +47,38 @@ Route::get('editar_ambientes/{id}','insertar_db_controller@editar_ambiente');
 
 Route::get('consultar_ambientes','insertar_db_controller@listar_ambiente');
 
-
 route::post('actualizar_ambientes/{id}','insertar_db_controller@actualizar_ambiente');
 
-Route::post('eliminar_ambientes/{id}','insertar_db_controller@eliminar_ambientes');
+Route::get('eliminar_ambientes/{id}','insertar_db_controller@eliminar_ambiente');
+
+
+
+
+
+/** rutas sobre crud de la informacion de las fichas**/
 
 Route::get('insertar_fichas', function () {
     return view('insertar_fichas');
 });
 
-/** rutas sobre crud de la informacion de las fichas**/
+Route::post('insertar_fichas','insertar_db_fichacontroller@insertar_ficha');
 
-Route::post('insertar_fichas','insertar_db_fichacontroller@insertar_fichas');
+Route::get('editar_fichas/{id}','insertar_db_fichacontroller@editar_ficha');
 
-Route::post('editar_fichas','insertar_db_controller@editar_fichas');
+Route::get('consultar_fichas','insertar_db_fichacontroller@listar_ficha');
 
-route::post('actualizar_fichas','insertar_db_controller@actualizar_fichas');
+route::post('actualizar_fichas/{id}','insertar_db_fichacontroller@actualizar_ficha');
 
-Route::post('eliminar_fichas','insertar_db_controller@eliminar_fichas');
+Route::get('eliminar_fichas/{id}','insertar_db_fichacontroller@eliminar_ficha');
 
+
+
+
+/*rutas sobre crud de la informacion de los instrucrtores*/
 
 Route::get('insertar_instructores', function () {
     return view('insertar_instructores');
 });
-
-/*rutas sobre crud de la informacion de los instrucrtores*/
 
 Route::post('insertar_instructores','insertar_db_instructorcontroller@insertar_instructor');
 

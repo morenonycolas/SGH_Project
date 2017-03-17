@@ -43,7 +43,7 @@
       <p align="center">fichas de formaci&oacute;n    </p>
       <p align="center"><img src="fichas-puzzle-formacion.jpg" width="224" height="131" /></p>
       <a href="{{url('insertar_fichas')}}"> Insertar_Fichas </a><br/>
-      <a href="{{url('editar_fichas')}}"> Editar_Fichas </a><br/>
+      <a href="{{url('consultar_fichas')}}"> Editar_Fichas </a><br/>
       <a href="{{url('actualizar_fichas')}}"> Actualizar_Fichas </a><br/>
       <a href="{{url('eliminar_fichas')}}"> Eliminar_Fichas </a><br/>
     </form>    

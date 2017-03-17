@@ -20,7 +20,7 @@
     <td><p>&nbsp;</p>
         <p align="center" class="Estilo1">Registro de Horario</p>
         <p align="center" class="Estilo1">------------------------------------------ </p>
-        <form id="form1" name="form1" method="post" action="{{url('actualizar_ambientes', $ambiente->id)}}">
+        <form id="actualizar_ambientes" name="actualizar_ambientes" method="post" action="{{url('actualizar_ambientes', $ambiente->id)}}">
         {!!csrf_field()!!}
           <table width="527" border="0" align="center">
             <tr>
