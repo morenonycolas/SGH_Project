@@ -82,15 +82,15 @@ Route::get('insertar_instructores', function () {
 
 Route::post('insertar_instructores','insertar_db_instructorcontroller@insertar_instructor');
 
-Route::post('editar_fichas','insertar_db_controller@editar_instructores');
+Route::get('editar_instructores/{id}','insertar_db_instructorcontroller@editar_instructor');
 
-route::post('actualizar_fichas','insertar_db_controller@actualizar_instructores');
+Route::get('consultar_instructores','insertar_db_instructorcontroller@listar_instructor');
 
-Route::post('eliminar_fichas','insertar_db_controller@eliminar_instructores');
+route::post('actualizar_instructor/{id}','insertar_db_instructorcontroller@actualizar_instructor');
 
-Route::get('ins_instructores', function () {
-    return view('insertar_instructores');
-});
+Route::get('eliminar_instructores/{id}','insertar_db_instructorcontroller@eliminar_instructor');
+
+
 
 
 

@@ -19,7 +19,7 @@
     <td><p>&nbsp;</p>
         <p align="center" class="Estilo1">Registro de Horario</p>
         <p align="center" class="Estilo1">------------------------------------------ </p>
-        <form id="form1" name="form1" method="post" action="{{url('consultar_fichas')}}">
+        <form id="actualizar_fichas" name="actualizar_fichas" method="post" action="{{url('actualizar_fichas', $ficha->id)}}">
         {!! csrf_field()!!}
           <table width="527" border="0" align="center">
              <tr>
@@ -38,7 +38,7 @@
               <td><div align="center" class="Estilo4">numero</div></td>
               <td><div align="center"><span class="Estilo1"></span>
                       <label>
-                      <input name="numero_ficha" value="{{$ficha->numero}}" type="text" size="30" placeholder="Numero de ficha"/>
+                      <input name="numero_ficha" value="{{$ficha->numero_ficha}}" type="text" size="30" placeholder="Numero de ficha"/>
                       </label>
               </div></td>
             </tr>

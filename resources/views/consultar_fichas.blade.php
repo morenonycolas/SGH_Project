@@ -19,7 +19,7 @@
  
  <td>{{$numero->id}}</td>
  <td>{{$numero->programa}}</td>
- <td>{{$numero->numero}}</td>
+ <td>{{$numero->numero_ficha}}</td>
  <td>{{$numero->grupo}}</td>
  <td><a href="{{url('editar_fichas', $numero->id)}}">Editar Ficha</a> </br>
  <a href="{{url('eliminar_fichas', $numero->id)}}">Eliminar Ficha</a>

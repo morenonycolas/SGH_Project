@@ -19,35 +19,23 @@
     <td><p>&nbsp;</p>
         <p align="center" class="Estilo1">Registro de Horario</p>
         <p align="center" class="Estilo1">------------------------------------------ </p>
-        <form id="form1" name="form1" method="post" action="{{url('insertar_fichas')}}">
-        {!! csrf_field()!!}
+        <form id="form1" name="form1" method="post" action="{{url('insertar_ambientes')}}">
+        {!!csrf_field()!!}
           <table width="527" border="0" align="center">
-             <tr>
-              <td colspan="2"><div align="center">FICHA</div>                
-                <div align="center"></div></td>
-            </tr>
             <tr>
-              <td><div align="center" class="Estilo4">numero</div></td>
-              <td><div align="center"><span class="Estilo1"></span>
-                      <label>
-                      <input name="numero_ficha" type="text" size="30" placeholder="Numero de ficha"/>
-                      </label>
-              </div></td>
-            </tr>
-            <tr>
-              <td width="210"><div align="center" class="Estilo4">Programa de formacion </div></td>
+              <td width="210"><div align="center" class="Estilo4">descripcion del  ambiente</div></td>
+              
+              
               <td width="307"><div align="center"><span class="Estilo1"></span>
+
                       <label>
-                      <input name="programa" type="text" size="30" placeholder="programa de formacion" />
+                      <input name="descripcion" type="text" size="30" placeholder="Numero de ambiente"/>
                       </label>
               </div></td>
             </tr>
-            <tr>
-              <td height="21"><div align="center">Grupo</div></td>
-              <td><div align="center"><span class="Estilo1"></span>
-                <input name="grupo" type="text" id="grupo" size="30" placeholder="grupo de la ficha"/>
-              </div></td>
-            </tr>
+             <tr>
+               <td colspan="2">----------------------------------------------------------------------------------</td>
+             </tr>
             <tr>
               <td height="21" colspan="2"><div align="center" class="Estilo4">
                   <label>

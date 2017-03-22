@@ -18,14 +18,15 @@ class insertar_db_instructorcontroller extends Controller
     public function insertar_instructor()
     {
 
-         $instructor=Request() ->all ();
-        instructores::create($instructor);
+         $data=Request() ->all ();
+        instructores::create($data);
+        return Redirect () -> to('consultar_instructores');
     }
 
    public function editar_instructor($id)
     {
-         $instructor=fichas::findorfail($id) ;
-        return view ('actualizar instructor', compact('instructor'));
+         $instructor=instructores::findorfail($id) ;
+        return view ('actualizar_instructores', compact('instructor'));
     }
 
      public function actualizar_instructor($id)
@@ -33,12 +34,21 @@ class insertar_db_instructorcontroller extends Controller
        $instructor=instructores::findorfail($id) ;
        $data = Request () -> all();
        $instructor -> fill ($data) -> save ();
-        return Redirect () -> to('consultar_instructor');
+        return Redirect () -> to('consultar_instructores');
     }
 
-     public function eliminar_instructor()
+     public function eliminar_instructor($id)
     {
-         $instructor=instructores:: findorfail($id) ->first();
-        $instructor->delete();
+        $instructor=instructores::findorfail($id) ;
+       $data = Request () -> all();
+       $instructor -> fill ($data) -> delete () ;
+       return Redirect () -> to('consultar_instructores');
     }
+
+     public function listar_instructor()
+    {
+         $instructor=instructores::all();
+        return view ('consultar_instructores', compact('instructor'));
+    }
+
 }

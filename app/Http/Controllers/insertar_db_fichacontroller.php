@@ -19,6 +19,7 @@ class insertar_db_fichacontroller extends Controller
     {
          $data=Request() ->all ();
         fichas::create($data);
+        return Redirect () -> to('consultar_fichas');
     }
     
      public function editar_ficha($id)
@@ -35,10 +36,12 @@ class insertar_db_fichacontroller extends Controller
         return Redirect () -> to('consultar_fichas');
     }
 
-     public function eliminar_ficha()
+     public function eliminar_ficha($id)
     {
-         $ficha=fichas:: findorfail($id) ->first();
-        $ficha->delete();
+       $ficha=fichas::findorfail($id) ;
+       $data = Request () -> all();
+       $ficha -> fill ($data) -> delete () ;
+       return Redirect () -> to('consultar_fichas');
     }
 
       public function listar_ficha()

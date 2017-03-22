@@ -25,16 +25,14 @@
       <p align="center"><img src="30_salaArta.jpg" width="214" height="131" /></p>
       <a href="{{url('insertar_ambientes')}}"> Insertar_Ambientes </a><br/> 
       <a href="{{url('consultar_ambientes')}}"> Editar_Ambientes </a><br/>
-      <a href="{{url('actualizar_ambientes')}}"> Actualizar_Ambientes </a><br/>
-      <a href="{{url('eliminar_ambientes')}}"> Eliminar_Ambientes </a><br/>
+      
     </form>    
     <p>&nbsp;</p>    </td>
     <td class= "fondo" align="center"><form id="form1" name="form1" method="post" action="">
       <p align="center">instructores    </p>
       <a href="{{url('insertar_instructores')}}"> Insertar_Instructores </a><br/>
-      <a href="{{url('editar_instructores')}}"> Editar_Instructores </a><br/>
-      <a href="{{url('actualizar_instructores')}}"> Actualizar_Instructores </a><br/>
-      <a href="{{url('eliminar_instructores')}}"> Eliminar_Instructores </a><br/>
+      <a href="{{url('consultar_instructores')}}"> Editar_Instructores </a><br/>
+     
     </form>    
       <p></p>
     </form>
@@ -44,8 +42,7 @@
       <p align="center"><img src="fichas-puzzle-formacion.jpg" width="224" height="131" /></p>
       <a href="{{url('insertar_fichas')}}"> Insertar_Fichas </a><br/>
       <a href="{{url('consultar_fichas')}}"> Editar_Fichas </a><br/>
-      <a href="{{url('actualizar_fichas')}}"> Actualizar_Fichas </a><br/>
-      <a href="{{url('eliminar_fichas')}}"> Eliminar_Fichas </a><br/>
+     
     </form>    
     </form>
       <form id="form2" name="form2" method="post" action="">
