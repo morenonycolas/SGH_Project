@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Fichas extends Migration
+class Users extends Migration
 {
     /**
      * Run the migrations.
@@ -12,15 +12,16 @@ class Fichas extends Migration
      */
     public function up()
     {
-            
-         Schema::create('fichas', function (Blueprint $table) {
+          Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('numero_ficha');
-            $table->string('programa');
-            $table->string('grupo');
+            $table->string('name');
+            $table->string('email');
+            $table->string('password');
+           
+            
             $table->timestamps();
-        });
-    }
+    });
+}
 
     /**
      * Reverse the migrations.

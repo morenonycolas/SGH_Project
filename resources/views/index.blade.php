@@ -41,7 +41,10 @@
         
         <div align="right">
          
-          <a href="{{url('Registrar_Usuarios')}}" target="_parent"> <input name="sesion" type="button"  id="sesion" value="iniciar sesion " /></a>          </div>
+          <a href="{{url('auth/login')}}" target="_parent"> <input name="sesion" type="button"  id="sesion" value=" iniciar sesion " /></a>         
+            <a href="{{url('auth/register')}}" target="_parent"> <input name="sesion" type="button"  id="sesion" value ="registrarse " /></a>  
+
+            </div>
         </label>
       </form>    </td>
   </tr>

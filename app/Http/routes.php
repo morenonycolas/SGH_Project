@@ -20,6 +20,10 @@ Route::get('index', function () {
     return view('index');
 });
 
+Route::get('Ingresar_Usuarios', function () {
+    return view('Ingresar_Usuarios');
+});
+
 
 Route::get('Registrar_Usuarios', function () {
     return view('Registrar_Usuarios');
@@ -90,8 +94,26 @@ route::post('actualizar_instructor/{id}','insertar_db_instructorcontroller@actua
 
 Route::get('eliminar_instructores/{id}','insertar_db_instructorcontroller@eliminar_instructor');
 
+Route::get('home', function () {
+    return view('home');
+});
 
+//Authentication routes...
+Route::get('auth/login','Auth\AuthController@getLogin');
 
+route::post('auth/login','Auth\AuthController@postLogin');
+
+Route::get('auth/logout','Auth\AuthController@getLogout');
+
+//Registration Routes...
+
+Route::get('auth/register','Auth\AuthController@getRegister');
+
+route::post('auth/register','Auth\AuthController@postRegister');
+
+/*	'uses' => '')
+
+*/
 
 
 
