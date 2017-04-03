@@ -14,14 +14,10 @@ class Instructores extends Migration
     {
              Schema::create('instructores', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('documento');
             $table->string('nombre_completo');
-            $table->string('telefono');
-            $table->string('correo');
-            $table->string('programa_de_formacion');
             $table->string('especializacion');
             $table->string('disponibilidad');
-            $table->timestamps();
+   
         });
     }
 

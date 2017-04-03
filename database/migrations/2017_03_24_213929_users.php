@@ -20,7 +20,7 @@ class Users extends Migration
             $table->rememberToken();
            
             
-            $table->timestamps();
+  
     });
 }
 

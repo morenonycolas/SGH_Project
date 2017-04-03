@@ -13,12 +13,11 @@ class Fichas extends Migration
     public function up()
     {
             
-         Schema::create('fichas', function (Blueprint $table) {
+         Schema::create('grupos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('numero_ficha');
+            $table->string('numero_grupo');
             $table->string('programa');
-            $table->string('grupo');
-            $table->timestamps();
+           
         });
     }
 

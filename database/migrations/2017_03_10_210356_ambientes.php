@@ -15,7 +15,8 @@ class Ambientes extends Migration
         Schema::create('ambientes', function (Blueprint $table) {
             $table->increments('id');
             $table->string('descripcion');
-            $table->timestamps();
+            $table->string('jornada_uso');
+ 
         });
     }
 

@@ -13,13 +13,16 @@ class Horarios extends Migration
     public function up()
     {
         
-        Schema::create('horarios', function (Blueprint $table) {
+        Schema::create('distribuciones', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('ambientes');
-            $table->string('fichas');
-            $table->string('horarios');
-            $table->string('instructores');
-            $table->timestamps();
+            $table->string('bloque');
+            $table->string('fk_id_ambiente');
+            $table->string('fk_id_grupo');
+            $table->string('fk_id_instructor');
+            $table->foreign('fk_id_ambiente')->reference('id')->on('ambientes');
+            $table->foreign('fk_id_grupo')->reference('id')->on('grupos');
+            $table->foreign('fk_id_instructor')->reference('id')->on('instructores');
+       
         });
     }
 
