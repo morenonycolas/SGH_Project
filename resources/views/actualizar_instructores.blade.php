@@ -1,3 +1,15 @@
+<?php
+
+/**
+ @file: actualizar_ambientes
+ @brief: se encuentra la pagina para la actualicazion de informacion de instructores
+ @brief:'nombre_completo','documento','telefono','correo','programa_de_formacion','especializacion','disponibilidad'
+ @date: 28/03/2017
+ @author: nycolas moreno marquez
+*/
+
+?>
+
 @extends('layout/master')
 @section('content')
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

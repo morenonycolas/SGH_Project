@@ -1,3 +1,16 @@
+<?php
+
+/**
+ @file: consultar_instructores.blade
+ @brief: se encuentra la pagina de consulta para los instructores
+ @brief:'descripcion'
+ @date 28/03/2017
+ @author nycolas moreno marquez
+ @return: controller/insertar_db_instructorcontroller
+*/
+
+?>
+
 @extends ('layout.master')
 @section ('content')
 <div align="center">

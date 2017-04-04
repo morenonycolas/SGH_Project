@@ -1,3 +1,15 @@
+<?php
+
+/**
+ @file: index.blade
+ @brief: se encuentra la pagina principal que encontrara el usuario 
+ @date: 28/03/2017
+ @author: nycolas moreno marquez
+ @return: auth
+*/
+
+?>
+
 @extends('layout/master')
 @section('content')
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

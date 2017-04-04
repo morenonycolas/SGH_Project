@@ -1,3 +1,17 @@
+<?php
+
+/**
+ @file: insertar_ambientes.blade
+ @brief: se encuentra la pagina para la consulta de fichas
+ @brief:'descripcion'
+ @date 28/03/2017
+ @author nycolas moreno marquez
+  @return: controller/insertar_db_fichacontroller
+*/
+
+?>
+
+
 @extends ('layout.master')
 @section ('content')
 <div align="center">
