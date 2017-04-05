@@ -10,6 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('menu', ['uses' => 'pruebaController@index']);
 
 Route::get('/', function () {
     return view('index');
@@ -90,7 +91,7 @@ Route::get('editar_instructores/{id}','insertar_db_instructorcontroller@editar_i
 
 Route::get('consultar_instructores','insertar_db_instructorcontroller@listar_instructor');
 
-route::post('actualizar_instructor/{id}','insertar_db_instructorcontroller@actualizar_instructor');
+route::post('actualizar_instructores/{id}','insertar_db_instructorcontroller@actualizar_instructor');
 
 Route::get('eliminar_instructores/{id}','insertar_db_instructorcontroller@eliminar_instructor');
 
@@ -110,10 +111,6 @@ Route::get('auth/logout','Auth\AuthController@getLogout');
 Route::get('auth/register','Auth\AuthController@getRegister');
 
 route::post('auth/register','Auth\AuthController@postRegister');
-
-/*	'uses' => '')
-
-*/
 
 
 

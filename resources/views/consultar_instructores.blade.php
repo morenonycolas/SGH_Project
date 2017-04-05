@@ -20,10 +20,6 @@
 <tr>
 <td> Id </td> 
 <td> Nombre </td>  
-<td> Documento </td>
-<td> Telefono </td> 
-<td> Correo </td> 
-<td> Programa de Formacion  </td> 
 <td> Especializacion </td>
 <td> Disponibilidad </td> 
 <td> Opciones </td>       
@@ -35,11 +31,7 @@
 <tr>
  
  <td>{{$datos->id}}</td>
- <td>{{$datos->documento}}</td>
  <td>{{$datos->nombre_completo}}</td>
- <td>{{$datos->telefono}}</td>
- <td>{{$datos->correo}}</td>
- <td>{{$datos->programa_de_formacion}}</td>
  <td>{{$datos->especializacion}}</td>
  <td>{{$datos->disponibilidad}}</td>
  <td><a href="{{url('editar_instructores', $datos->id)}}">Editar Instructor</a> </br>

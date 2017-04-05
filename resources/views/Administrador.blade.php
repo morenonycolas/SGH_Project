@@ -19,9 +19,9 @@
 <head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Documento sin t&iacute;tulo</title>
+<title>Administrador</title>
 <style>
-.fondo
+.fondo 
 {
   background-image: url('../imagenes/fondo_la92.png');
 }
@@ -38,24 +38,24 @@
       <p align="center">Ambientes de formaci&oacute;n      </p>
       <p align="center"><img src="30_salaArta.jpg" width="214" height="131" /></p>
       <a href="{{url('insertar_ambientes')}}"> Insertar_Ambientes </a><br/> 
-      <a href="{{url('consultar_ambientes')}}"> Editar_Ambientes </a><br/>
+      <a href="{{url('consultar_ambientes')}}"> Consultar_Ambientes </a><br/>
       
     </form>    
     <p>&nbsp;</p>    </td>
     <td class= "fondo" align="center"><form id="form1" name="form1" method="post" action="">
       <p align="center">instructores    </p>
       <a href="{{url('insertar_instructores')}}"> Insertar_Instructores </a><br/>
-      <a href="{{url('consultar_instructores')}}"> Editar_Instructores </a><br/>
+      <a href="{{url('consultar_instructores')}}"> Consultar_Instructores </a><br/>
      
     </form>    
       <p></p>
     </form>
     <p>&nbsp;</p>    </td>
     <td><form id="form1" name="form1" method="post" action="">
-      <p align="center">fichas de formaci&oacute;n    </p>
+      <p align="center">grupo de formaci&oacute;n    </p>
       <p align="center"><img src="fichas-puzzle-formacion.jpg" width="224" height="131" /></p>
-      <a href="{{url('insertar_fichas')}}"> Insertar_Fichas </a><br/>
-      <a href="{{url('consultar_fichas')}}"> Editar_Fichas </a><br/>
+      <a href="{{url('insertar_fichas')}}"> Insertar_Grupo </a><br/>
+      <a href="{{url('consultar_fichas')}}"> Consultar_Grupo </a><br/>
      
     </form>    
     </form>
@@ -76,7 +76,7 @@
     {{Auth::user()->name}}
     @endif <br>
 
-    <a href="auth/logout"> cerrar sesión </a> <br>
+    <a href="auth/logout"> cerrar sesion </a> <br>
 
     
     </td>

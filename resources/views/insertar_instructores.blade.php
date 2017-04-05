@@ -36,53 +36,31 @@
         {!!csrf_field()!!}
           <table width="527" border="0" align="center">
             <tr>
-              <td height="21" colspan="2"><div align="center">Intstructor</div></td>
+              <td height="21" colspan="2"><div align="center">Intructor</div></td>
             </tr>
             <tr>
-              <td width="210" height="21"><div align="center" class="Estilo1">nombre</div></td>
+              <td width="210" height="21"><div align="center" >Nombre</div></td>
               <td width="307"><div align="center"><span class="Estilo1"></span>
                   <input name="nombre_completo" type="text" size="29" placeholder="Nombre completo"  /> 
                   <label> <br />
                   </label>
               </div></td>
             </tr>
+          
             <tr>
-              <td height="21"><div align="center">Documento</div></td>
-              <td height="21"><div align="center"><span class="Estilo1"></span>
-                <input name="documento" type="text" id="documento" size="30" placeholder="identificacion" />
-              </div></td>
-            </tr>
-            <tr>
-              <td height="21"><div align="center">telefono</div></td>
-              <td height="21"><div align="center"><span class="Estilo1"></span>
-                <input name="telefono" type="text" id="telefono" size="30" placeholder="telefono" />
-              </div></td>
-            </tr>
-            <tr>
-              <td height="21"><div align="center">correo</div></td>
-              <td height="21"><div align="center"><span class="Estilo1"></span>
-                <input name="correo" type="text" id="correo" size="30" placeholder="correo" />
-              </div></td>
-            </tr>
-            <tr>
-              <td height="21"><div align="center">programa de formacion </div></td>
-              <td height="21"><div align="center"><span class="Estilo1"></span>
-                <input name="programa_de_formacion" type="text" id="programa_de_formacion" size="30" placeholder="programa de formacion" />
-              </div></td>
-            </tr>
-            <tr>
-              <td height="21"><div align="center">especializacion</div></td>
+              <td height="21"><div align="center">Especializacion</div></td>
               <td height="21"><div align="center"><span class="Estilo1"></span>
                 <input name="especializacion" type="text" id="programa_de_formacion2" size="30" placeholder="especializacion" />
               </div></td>
             </tr>
             <tr>
-              <td height="21"><div align="center">disponiobilidad</div></td>
+              <td height="21"><div align="center">Disponiobilidad</div></td>
               <td height="21"><div align="center"><span class="Estilo1"></span>
                 <select name="disponiobilidad" >
                   <option value="sel:" selected="selected">sel:</option>
                   <option value="Diurno">Diurno</option>
                   <option value="Nocturno">Nocturno</option>
+                  <option value="Fin de Semana">Fin de Semana</option>
                 </select>
               </div></td>
             </tr>

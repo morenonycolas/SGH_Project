@@ -43,7 +43,22 @@
                       <label>
                       <input name="descripcion" type="text" size="30" placeholder="Numero de ambiente"/>
                       </label>
-              </div></td>
+              </div>
+              </td> 
+
+            </tr>
+
+            <tr>
+               <td width="210"><div align="center" class="Estilo4">Jornada de Uso</div></td>
+              
+              
+              <td width="307"><div align="center"><span class="Estilo1"></span>
+
+                      <label>
+                      <input name="jornada_uso" type="text" size="30" placeholder="Jornada/s de Uso"/>
+                      </label>
+              </div>
+              </td>
             </tr>
              <tr>
                <td colspan="2">----------------------------------------------------------------------------------</td>

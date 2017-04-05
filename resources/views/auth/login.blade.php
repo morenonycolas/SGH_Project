@@ -38,7 +38,7 @@
       <tr>
         <td colspan="2">
          <div align="center">
-         <button type="submit">Ingresar Sesion</button>
+         <button type="submit">Iniciar Sesion</button>
     </div></td>
       </tr>
     </table> 

@@ -15,46 +15,75 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Documento sin título</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Documento sin t&iacute;tulo</title>
+<style type="text/css">
+<!--
+#Layer1 {
+  position:absolute;
+  width:900px;
+  height:115px;
+  z-index:1;
+  left: 227px;
+  top: 1484px;
+}
+-->
+</style>
+<link href="estilos.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.Estilo3 {color: #FFFFFF}
+-->
+</style>
 </head>
+
 <body>
-<table width="900" border="1" align="center">
+<script src="../../../wamp64/www/SGH_Project/database/migrations/SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../../../wamp64/www/SGH_Project/database/migrations/SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<table width="900" border="0" align="center" bgcolor="#CCCCCC" >
   <tr>
-    <td height="48" colspan="3"><img src={{'fondo_la92.png'}} width="903" height="160" /></td>
+    <td colspan="2" ><div align="center"><img src="baner.png" width="450" height="130" /><img src="baner.png" width="450" height="130" /></div></td>
   </tr>
   <tr>
-    <td height="182"><form id="form1" name="form1" method="post" action="">
-      <p align="center">Ambientes de formaci&oacute;n      </p>
-      <p align="center"><img src="30_salaArta.jpg" width="214" height="131" /></p>
-    </form>    
-    <p>&nbsp;</p>    </td>
-    <td class= "fondo" align="center"><form id="form1" name="form1" method="post" action="">
-      <p align="center">instructores    </p>
-      <p></p>
-    </form>
-    <p>&nbsp;</p>    </td>
-    <td><form id="form1" name="form1" method="post" action="">
-      <p align="center">fichas de formaci&oacute;n    </p>
-      <p align="center"><img src="fichas-puzzle-formacion.jpg" width="224" height="131" /></p>
-    </form>
-      <form id="form2" name="form2" method="post" action="">
-        <label>
-        
-        <div align="right">
+     <td colspan="2" ><div align="center"> <iframe src="menu" width="900" height="100" scrolling="no" /> </iframe> </div></td>
+ 
+</td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor="#00CCCC"><marquee behavior="alternate" width="900" height="536" >
+  <div align="center" z-index="5"> <img src="slider_politica.jgp" width="990" height="536" align="absmiddle" z-index="5"/>
+  <img src="slider_olimpiadas.png" width="900" height="536" align="absmiddle"  />
+  <img src="slider_ceet.jpg" width="900" height="536" align="absmiddle"  /> </div>
+  </marquee>  </td> </td>
+  </tr>
+  <tr>
+    <td width="64"><header>
+
+<div class="container">
+  <h1>Objetivo General</h1>
+  </div>
+  </header>
+  <div class="container">
+  <section class="main row" align="center">
+  <article class="col-lg-9" align="center" >
+    <p>
+     Desarrollar e implementar un sistema informático que apoye y contemple posibles mejoras en el proceso de asignación de horarios para el Centro de Electricidad Electrónica y Telecomunicaciones, del SENA (CEET) - Sede Colombia.
+    </p>
+     <div align="right">
          
-          <a href="{{url('auth/login')}}" target="_parent"> <input name="sesion" type="button"  id="sesion" value=" iniciar sesion " /></a>         
-            <a href="{{url('auth/register')}}" target="_parent"> <input name="sesion" type="button"  id="sesion" value ="registrarse " /></a>  
+          <a href="{{url('auth/login')}}" target="_parent"> <input name="sesion" type="button"  id="sesion" value=" iniciar sesion " align="right" ="right"/></a>         
+            <a href="{{url('auth/register')}}" target="_parent"> <input name="sesion" type="button"  id="sesion" value ="registrarse " align="right" /></a>  
 
             </div>
-        </label>
-      </form>    </td>
+    </td>
   </tr>
-  <tr>
-    <td colspan="3"><img src="Copy-of-footer.png" width="901" height="90" /></td>
-  </tr>
-</table>
-<h2>  </h2>
+  </table>
+
+
+<div align="center" id="Layer1" position="fixed" width="100%" bgcolor="red" >
+  <p>&nbsp;</p>
+  <p>BIENVENIDO</p>
+</div>
 </body>
 </html>
 @endsection

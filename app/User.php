@@ -21,5 +21,7 @@ class User extends Model implements AuthenticatableContract,
 
 	Protected $hidden = ['password', 'remember_token'];
 
+	public $timestamps = false;
+
     
 }

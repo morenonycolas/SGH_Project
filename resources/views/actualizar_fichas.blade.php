@@ -42,24 +42,19 @@
               <td width="210"><div align="center" class="Estilo4">Programa de formacion </div></td>
               <td width="307"><div align="center"><span class="Estilo1"></span>
                       <label>
-                      <input name="programa" value="{{$ficha->programa}}" type="text" size="30" placeholder="programa de formacion" />
+                      <input name="programa" value="{{$ficha->programa}}" type="text" size="30" placeholder="Programa de Formacion" />
                       </label>
               </div></td>
             </tr>
             <tr>
-              <td><div align="center" class="Estilo4">numero</div></td>
+              <td><div align="center" class="Estilo4">Numero de Grupo</div></td>
               <td><div align="center"><span class="Estilo1"></span>
                       <label>
-                      <input name="numero_ficha" value="{{$ficha->numero_ficha}}" type="text" size="30" placeholder="Numero de ficha"/>
+                      <input name="numero_grupo" value="{{$ficha->numero_grupo}}" type="text" size="30" placeholder="Numero de Grupo"/>
                       </label>
               </div></td>
             </tr>
-            <tr>
-              <td height="21"><div align="center">Grupo</div></td>
-              <td><div align="center"><span class="Estilo1"></span>
-                <input name="grupo" value="{{$ficha->grupo}}" type="text" id="grupo" size="30" placeholder="grupo de la ficha"/>
-              </div></td>
-            </tr>
+
             <tr>
               <td height="21" colspan="2"><div align="center" class="Estilo4">
                   <label>

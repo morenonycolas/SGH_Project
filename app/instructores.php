@@ -16,7 +16,7 @@ class instructores extends Model
 {
     
     protected $table ='instructores';
-    protected $fillable = ['documento','nombre_completo','telefono','correo','programa_de_formacion','especializacion','disponibilidad'];
+    protected $fillable = ['nombre_completo','especializacion','disponibilidad'];
     public $timestamps = false;
 }
 

@@ -15,6 +15,6 @@ class ambientes extends Model
 {
 
     protected $table ='ambientes';
-    protected $fillable = ['descripcion'];
+    protected $fillable = ['descripcion','jornada_uso'];
     public $timestamps = false;
 }

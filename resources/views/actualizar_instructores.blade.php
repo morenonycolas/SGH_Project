@@ -39,39 +39,11 @@
             </tr>
 
             <tr>
-              <td height="21"><div align="center">Documento</div></td>
-              <td height="21"><div align="center"><span class="Estilo1"></span>
-                <input name="documento" type="text" value="{{$instructor->documento}}" id="documento" size="30" placeholder="identificacion" />
-              </div></td>
-            </tr>
-
-            <tr>
               <td width="210" height="21"><div align="center" class="Estilo1">nombre</div></td>
               <td width="307"><div align="center"><span class="Estilo1"></span>
                   <input name="nombre_completo" type="text" value="{{$instructor->nombre_completo}}" size="29" placeholder="Nombre completo"  /> 
                   <label> <br />
                   </label>
-              </div></td>
-            </tr>
-            
-            <tr>
-              <td height="21"><div align="center">telefono</div></td>
-              <td height="21"><div align="center"><span class="Estilo1"></span>
-                <input name="telefono" type="text" value="{{$instructor->telefono}}" id="telefono" size="30" placeholder="telefono" />
-              </div></td>
-            </tr>
-
-            <tr>
-              <td height="21"><div align="center">correo</div></td>
-              <td height="21"><div align="center"><span class="Estilo1"></span>
-                <input name="correo" type="text"  value="{{$instructor->correo}}" id="correo" size="30" placeholder="correo" />
-              </div></td>
-            </tr>
-
-            <tr>
-              <td height="21"><div align="center">programa de formacion </div></td>
-              <td height="21"><div align="center"><span class="Estilo1"></span>
-                <input name="programa_de_formacion" type="text"  value="{{$instructor->programa_de_formacion}}" id="programa_de_formacion" size="30" placeholder="programa de formacion" />
               </div></td>
             </tr>
 
@@ -89,6 +61,7 @@
                   <option value="sel:" selected="selected">sel:</option>
                   <option value="Diurno">Diurno</option>
                   <option value="Nocturno">Nocturno</option>
+                  <option value="Fin de Semana">Fin de semana</option>
                 </select>
               </div></td>
             </tr>

@@ -39,10 +39,10 @@
                 <div align="center"></div></td>
             </tr>
             <tr>
-              <td><div align="center" class="Estilo4">numero</div></td>
+              <td><div align="center" class="Estilo4">Numero de Grupo</div></td>
               <td><div align="center"><span class="Estilo1"></span>
                       <label>
-                      <input name="numero_ficha" type="text" size="30" placeholder="Numero de ficha"/>
+                      <input name="numero_grupo" type="text" size="30" placeholder="Numero de grupo"/>
                       </label>
               </div></td>
             </tr>
@@ -54,12 +54,7 @@
                       </label>
               </div></td>
             </tr>
-            <tr>
-              <td height="21"><div align="center">Grupo</div></td>
-              <td><div align="center"><span class="Estilo1"></span>
-                <input name="grupo" type="text" id="grupo" size="30" placeholder="grupo de la ficha"/>
-              </div></td>
-            </tr>
+            
             <tr>
               <td height="21" colspan="2"><div align="center" class="Estilo4">
                   <label>

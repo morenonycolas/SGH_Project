@@ -19,7 +19,8 @@
 <table border="1">
 <tr>
 <td> Id </td> 
-<td> Descripcion </td>  
+<td> Descripcion </td> 
+<td> Jornada de uso </td>  
 <td> Opciones </td>   
 
 </tr>
@@ -30,6 +31,7 @@
  
  <td>{{$descripcion->id}}</td>
  <td>{{$descripcion->descripcion}}</td>
+ <td>{{$descripcion->jornada_uso}}</td>
  <td><a href="{{url('editar_ambientes', $descripcion->id)}}">Editar Ambiente</a> </br>
  <a href="{{url('eliminar_ambientes', $descripcion->id)}}">Eliminar Ambiente</a>
  </td>
